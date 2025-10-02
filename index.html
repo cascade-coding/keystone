@@ -28,15 +28,22 @@
 
       <div class="relative z-10 max-w-[1280px] mx-auto">
         <div class="flex items-center justify-end sm:px-4">
-
-          <div class="flex sm:hidden justify-center items-center w-full bg-accent-1 py-1.5">
-             <a href="tel:5551234567" class="font-primary text-sm font-medium text-white text-center">
+          <div
+            class="flex sm:hidden justify-center items-center w-full bg-accent-1 py-1.5"
+          >
+            <a
+              href="tel:5551234567"
+              class="font-primary text-sm font-medium text-white text-center"
+            >
               <span>Make a Phone Call: (555) 123-4567</span>
             </a>
           </div>
 
           <div class="hidden sm:flex justify-between items-center w-full">
-            <a href="tel:5551234567" class="font-primary font-semibold hover:text-accent-2">
+            <a
+              href="tel:5551234567"
+              class="font-primary font-semibold hover:text-accent-2"
+            >
               <span>Make a Phone Call: (555) 123-4567</span>
             </a>
 
@@ -73,7 +80,7 @@
 
           <!-- large menu -->
           <ul
-            class="hidden sm:flex items-center justify-center gap-x-16 select-none"
+            class="hidden md:flex items-center justify-center md:gap-x-8 xl:gap-x-10 select-none"
           >
             <li>
               <a
@@ -117,7 +124,7 @@
           </ul>
 
           <button
-            class="menu_trigger block sm:hidden hover:**:stroke-accent **:transition cursor-pointer"
+            class="menu_trigger block md:hidden hover:**:stroke-accent **:transition cursor-pointer"
           >
             <svg
               width="24"
@@ -138,15 +145,39 @@
 
           <!-- mobile menu -->
           <div class="absolute inset-0 top-[100%] z-50 overflow-x-clip">
-            <div class="mobile_menu bg-gray-100 p-4 min-h-[280px] sm:hidden">
+            <div class="mobile_menu bg-gray-100 p-4 min-h-[280px] md:hidden">
               <ul
                 class="menu flex flex-col items-end justify-center gap-[18px] select-none"
               >
-                <li
-                  class="hover:*:text-accent inline-block w-full text-right transition border-b-2 border-transparent hover:border-b-accent-dark-2"
-                >
-                  <a href="#intro" class="inline-block w-full transition"
-                    >About</a
+                <li>
+                  <a
+                    href="/keystone/#hero"
+                    class="font-primary font-semibold text-2xl text-accent-2 hover:text-accent-1 uppercase transition"
+                    >Home</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#services"
+                    class="font-primary font-semibold text-2xl text-accent-2 hover:text-accent-1 uppercase transition"
+                    >Services</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#projects"
+                    class="font-primary font-semibold text-2xl text-accent-2 hover:text-accent-1 uppercase transition"
+                    >Projects</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#contact"
+                    class="font-primary font-semibold text-2xl text-accent-2 hover:text-accent-1 uppercase transition"
+                    >Contact Us</a
                   >
                 </li>
               </ul>

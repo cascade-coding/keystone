@@ -2,10 +2,10 @@
 @tailwind utilities;
 
 @theme {
-  --color-accent: #FF6F00;
-  --color-accent-1: #1C2A39;
-  --color-accent-2: #4A6FA5;
-  --color-pure: #FFFFFF;
+  --color-accent: #ff6f00;
+  --color-accent-1: #1c2a39;
+  --color-accent-2: #4a6fa5;
+  --color-pure: #ffffff;
 
   --color-primary-text: #111111;
 
@@ -13,20 +13,17 @@
   --font-primary: "Oswald", sans-serif;
 }
 
-
 body {
   font-family: var(--font-base);
   color: var(--color-primary-text);
 }
 
-
-
 .mobile_menu {
   user-select: none;
   pointer-events: none;
   opacity: 0;
-  transition: opacity 300ms ease, transform 300ms ease;
-  transform: translateX(100%);
+  clip-path: circle(0% at 100% 0);
+  transition: clip-path 500ms ease, opacity 300ms ease;
 }
 
 /* Active menu state */
@@ -34,9 +31,5 @@ body {
   user-select: auto;
   pointer-events: all;
   opacity: 1;
-  transform: translateX(0);
-}
-
-.mobile_menu .menu {
-  transition: transform 500ms ease-in-out;
+  clip-path: circle(150% at 100% 0);
 }
