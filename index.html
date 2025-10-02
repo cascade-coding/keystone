@@ -22,22 +22,51 @@
   <body>
     <!-- Start: Top Header -->
     <nav class="relative pt-0 sm:pt-3 bg-white">
-      <div class="absolute inset-0 bg-[url('/assets/pattern-nav.png')] bg-cover bg-center opacity-10"></div>
+      <div
+        class="absolute inset-0 bg-[url('/assets/pattern-nav.png')] bg-cover bg-center opacity-10"
+      ></div>
 
       <div class="relative z-10 max-w-[1280px] mx-auto">
         <div class="flex items-center justify-end sm:px-4">
-          <a
-            href="tel:5551234567"
-            class="w-full sm:w-auto inline-flex items-center justify-end sm:justify-center gap-x-2 bg-gray-100 px-2 py-1.5 rounded-sm font-semibold text-primary"
-          >
-            <span>Make a Phone Call: (555) 123-4567</span>
-          </a>
+
+          <div class="flex sm:hidden justify-center items-center w-full bg-accent-1 py-1.5">
+             <a href="tel:5551234567" class="font-primary text-sm font-medium text-white text-center">
+              <span>Make a Phone Call: (555) 123-4567</span>
+            </a>
+          </div>
+
+          <div class="hidden sm:flex justify-between items-center w-full">
+            <a href="tel:5551234567" class="font-primary font-semibold hover:text-accent-2">
+              <span>Make a Phone Call: (555) 123-4567</span>
+            </a>
+
+            <div class="flex items-center justify-center gap-x-4">
+              <div
+                class="border border-accent-2 p-1.5 rounded-xs hover:border-accent cursor-pointer"
+              >
+                <div x-data="iconComponent('twitter', '')" x-html="icon"></div>
+              </div>
+              <div
+                class="border border-accent-2 p-1.5 rounded-xs hover:border-accent cursor-pointer"
+              >
+                <div
+                  x-data="iconComponent('instagram', '')"
+                  x-html="icon"
+                ></div>
+              </div>
+              <div
+                class="border border-accent-2 p-1.5 rounded-xs hover:border-accent cursor-pointer"
+              >
+                <div x-data="iconComponent('youtube', '')" x-html="icon"></div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="relative flex items-center justify-between px-3 sm:px-4">
           <a href="/keystone/">
             <div
-              x-data="iconComponent('logo', 'w-[120px] md:w-[190px] 2xl:w-[220px]')"
+              x-data="iconComponent('logo', 'w-[180px] md:w-[200px] 2xl:w-[260px]')"
               x-html="icon"
             ></div>
           </a>
@@ -47,25 +76,44 @@
             class="hidden sm:flex items-center justify-center gap-x-16 select-none"
           >
             <li>
-              <a href="/keystone/#hero" class="font-semibold hover:text-accent transition">Home</a>
+              <a
+                href="/keystone/#hero"
+                class="font-semibold hover:text-accent transition"
+                >Home</a
+              >
             </li>
 
             <li>
-              <a href="#about" class="font-semibold hover:text-accent transition">Who We Are</a>
+              <a
+                href="#about"
+                class="font-semibold hover:text-accent transition"
+                >Who We Are</a
+              >
             </li>
 
             <li>
-              <a href="#services" class="font-semibold hover:text-accent transition">Services</a>
+              <a
+                href="#services"
+                class="font-semibold hover:text-accent transition"
+                >Services</a
+              >
             </li>
 
             <li>
-              <a href="#projects" class="font-semibold hover:text-accent transition">Projects</a>
+              <a
+                href="#projects"
+                class="font-semibold hover:text-accent transition"
+                >Projects</a
+              >
             </li>
 
             <li>
-              <a href="#contact" class="font-semibold hover:text-accent transition">Contact Us</a>
+              <a
+                href="#contact"
+                class="font-semibold hover:text-accent transition"
+                >Contact Us</a
+              >
             </li>
-            
           </ul>
 
           <button
@@ -101,7 +149,6 @@
                     >About</a
                   >
                 </li>
-                
               </ul>
             </div>
           </div>
@@ -109,8 +156,6 @@
       </div>
     </nav>
     <!-- End: Top Header -->
-
-
 
     <script type="module" src="/src/main.ts"></script>
   </body>
