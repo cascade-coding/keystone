@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>KEYSTONE</title>
+  </head>
+  <body>
+    <!-- Start: Top Header -->
+    <nav class="relative pt-0 sm:pt-3 bg-white">
+      <div class="absolute inset-0 bg-[url('/assets/pattern-nav.png')] bg-cover bg-center opacity-10"></div>
+
+      <div class="relative z-10 max-w-[1280px] mx-auto">
+        <div class="flex items-center justify-end sm:px-4">
+          <a
+            href="tel:5551234567"
+            class="w-full sm:w-auto inline-flex items-center justify-end sm:justify-center gap-x-2 bg-gray-100 px-2 py-1.5 rounded-sm font-semibold text-primary"
+          >
+            <span>Make a Phone Call: (555) 123-4567</span>
+          </a>
+        </div>
+
+        <div class="relative flex items-center justify-between px-3 sm:px-4">
+          <a href="/keystone/">
+            <div
+              x-data="iconComponent('logo', 'w-[120px] md:w-[190px] 2xl:w-[220px]')"
+              x-html="icon"
+            ></div>
+          </a>
+
+          <!-- large menu -->
+          <ul
+            class="hidden sm:flex items-center justify-center gap-x-16 select-none"
+          >
+            <li>
+              <a href="/keystone/#hero" class="font-semibold hover:text-accent transition">Home</a>
+            </li>
+
+            <li>
+              <a href="#about" class="font-semibold hover:text-accent transition">Who We Are</a>
+            </li>
+
+            <li>
+              <a href="#services" class="font-semibold hover:text-accent transition">Services</a>
+            </li>
+
+            <li>
+              <a href="#projects" class="font-semibold hover:text-accent transition">Projects</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="font-semibold hover:text-accent transition">Contact Us</a>
+            </li>
+            
+          </ul>
+
+          <button
+            class="menu_trigger block sm:hidden hover:**:stroke-accent **:transition cursor-pointer"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 12H20M4 18H20M4 6H20"
+                stroke="#1A1A1A"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+
+          <!-- mobile menu -->
+          <div class="absolute inset-0 top-[100%] z-50 overflow-x-clip">
+            <div class="mobile_menu bg-gray-100 p-4 min-h-[280px] sm:hidden">
+              <ul
+                class="menu flex flex-col items-end justify-center gap-[18px] select-none"
+              >
+                <li
+                  class="hover:*:text-accent inline-block w-full text-right transition border-b-2 border-transparent hover:border-b-accent-dark-2"
+                >
+                  <a href="#intro" class="inline-block w-full transition"
+                    >About</a
+                  >
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End: Top Header -->
+
+
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
