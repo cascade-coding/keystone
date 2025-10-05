@@ -17,6 +17,14 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
     <title>KEYSTONE</title>
   </head>
   <body>
@@ -26,8 +34,8 @@
         class="absolute inset-0 bg-[url('/assets/pattern-nav.png')] bg-cover bg-center opacity-10"
       ></div>
 
-      <div class="relative z-10 max-w-[1280px] mx-auto">
-        <div class="flex items-center justify-end sm:px-4">
+      <div class="relative z-10 max-w-[1280px] 2xl:max-w-[1400px] mx-auto">
+        <div class="flex items-center justify-end px-0 sm:px-4">
           <div
             class="flex sm:hidden justify-center items-center w-full bg-accent-1 py-1.5"
           >
@@ -187,6 +195,52 @@
       </div>
     </nav>
     <!-- End: Top Header -->
+
+    <!-- Start: Hero -->
+    <div class="swiper swiper-home-hero bg-accent-500 h-[440px] lg:h-[620px] w-full relative"
+    >
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper relative">
+
+        <div class="absolute inset-0 bg-black/40 z-10 flex justify-center">
+
+          <div class="w-full max-w-[1280px] 2xl:max-w-[1400px] mx-auto px-3 sm:px-4 mt-[70px] md:mt-[120px]">
+            <div class="text-white">
+              <h1 class="font-primary font-bold text-2xl md:text-4xl xl:text-5xl 2xl:text-6xl">Building Strong Foundations for Tomorrow</h1>
+              <h4 class="font-primary font-semibold text-base md:text-xl lg:text-2xl mt-2.5 max-w-2xl">We deliver innovative, sustainable construction solutions with precision and care.</h4>
+
+              <div class="mt-6 flex items-center gap-4">
+                <button class="py-2 px-5 font-semibold border-2 border-transparent bg-accent-1 hover:bg-accent-1/80 active:bg-accent-1/80 hover:border-zinc-500 active:border-zinc-500 cursor-pointer text-white">Learn More</button>
+                <button class="py-2 px-5 font-semibold  border-2 border-transparent bg-accent hover:border-amber-700 active:border-amber-700 cursor-pointer text-white">Contact Us</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Slides -->
+        <div class="swiper-slide relative">
+          <img src="/assets/hero-slider-01.jpg" alt="" srcset="" />
+        </div>
+
+        <div class="swiper-slide relative">
+          <img src="/assets/hero-slider-02.jpg" alt="" srcset="" />
+        </div>
+
+
+
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+    <!-- End: Hero -->
 
     <script type="module" src="/src/main.ts"></script>
   </body>
